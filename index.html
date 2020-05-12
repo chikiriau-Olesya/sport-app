@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировка для Жени и Саши</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="content is-index">
+        <h1>Тренировка</h1>
+        <h2>
+            <a href="http://reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine" target="_blank">Подробное описание программы</a>
+        </h2>
+        <a class="btn" href="pages/warmup.html">Начать</a>
+    </div>
+    <script>
+        // Документация: https://learn.javascript.ru/localstorage
+        // https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage
+        // кол-во выполненых упражнений
+        localStorage.setItem('exCount', 1);
+        // кол-во выполненых сетов
+        localStorage.setItem('setCount', 1);
+        // номер текущего сета
+        localStorage.setItem('setExercise', 0);
+        // счетчики выполненых упражнений в сете
+        localStorage.setItem('setExCount1', 1);
+        localStorage.setItem('setExCount2', 1);
+    </script>
+    
+    <div id="canvas"></div>
+    <script src="js/p5.min.js"></script>
+    <!-- <script src="js/sketch.js"></script> -->
+</body>
+</html>

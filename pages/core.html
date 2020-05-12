@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировки дома</title>
+    <link rel="stylesheet" href="../styles//index.css">
+    <script src="../js/ejs.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/render-template.js"></script>
+</head>
+
+<body>
+    <script id="template" type="text/template">
+        <div class="wrapper">
+            <h1>Финал</h1>
+            <h2>Завершите тренировку, выполнив упражнения для пресса</h2>
+            <div class="info">
+                <% core.forEach(w => {%>
+                    <h3><%= w.title %></h3>
+                    <p><%= w.desc %></p>
+                <% }) %>
+            </div>
+        </div>
+        <a class="btn" href="../index.html">Готово</a>
+    </script>
+
+    <div class="content" id="content"></div>
+</body>
+
+</html>

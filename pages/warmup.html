@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировки дома. Главная</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../js/ejs.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/render-template.js"></script>
+</head>
+
+<body class="is-flexible">
+    <script id="template" type="text/template">
+        <div class="wrapper">
+            <h1>Динамичная<br />разминка</h1>
+            <h2>Разогрейте мыщцы, чтобы подготовиться к тренировке</h2>
+            <div class="info">
+                <% warmups.forEach(w => {%>
+                    <h3><%= w.title %></h3>
+                    <p><%= w.desc %></p>
+                <% }) %>
+            </div>
+        </div>
+        <a class="btn is-right" href="exercise.html">Дальше</a>
+    </script>
+
+    <div class="content" id="content"></div>
+
+    <div id="canvas"></div>
+    <script src="../js/p5.min.js"></script>
+    <script src="../js/sketch.js"></script>
+</body>
+
+</html>
