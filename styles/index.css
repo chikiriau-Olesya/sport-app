@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import './fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
 * {
@@ -16,14 +17,14 @@
     margin: auto;
     font-size: 30vw;
     font-weight: 900;
-    /* -webkit-text-stroke: 1.5px red;
-    -webkit-text-fill-color: white; */
+    color: white;
     z-index: 10;
 }
 
 body {
     font-family: Roboto, sans-serif;
     overflow: hidden;
+    background-color: #9EFF00;
 }
 
 body.is-flexible {
@@ -41,6 +42,19 @@ body.is-flexible {
 
 .content.is-index {
     display: block;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family:  'Din', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
 }
 
 h1 {
@@ -116,8 +130,8 @@ li {
     text-transform: uppercase;
 
     padding: 16px 24px;
-    color: #000000;
-    border: 3px solid black;
+    color: #9EFF00;
+    border: 1vw solid #9EFF00;
     border-radius: 42px;
     text-decoration: none;
     position: fixed;
@@ -133,12 +147,13 @@ li {
 }
 
 .btn:hover {
-    color: red;
-    border: 1px solid red; 
+    color: white;
+    background-color: #70D20D;
+    border: 5px solid white; 
 }
 
 .info {
-    border: 1px solid #000000;
+    border-radius: 36px;
     padding: 24px 96px 24px 16px;
     display: inline-flex;
     flex-flow: column;
@@ -158,12 +173,19 @@ li {
     left: 50%;
 }
 
-#canvas {
+/* #canvas {
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
-}
+} */
+
+canvas {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    display: block;
+  }
 
 @media (max-width: 768px) {
 
