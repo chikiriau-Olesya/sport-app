@@ -12,18 +12,18 @@ function setup() {
 function draw() {
     background('#9EFF00');
 
-    triangle(mouseX, mouseY, 160, 180, 280, 200);
-    triangle(mouseX, mouseY, 260, 200, 280, 200);
+    triangle(mouseX, mouseY, 560, 480, 700, 900);
+    triangle(mouseX, mouseY, 460, 500, 700, 900);
     // triangle(250, 80, 160, 180, 280, 200);
 
     let randomX = random(300, 400) 
     let randomY = random(400, 600)
-    triangle(400, randomY, randomX, 500, 280, 200);
-    triangle(100, randomY, randomX, 100, 280, 200);
+    triangle(450, randomY, randomX, 500, 700, 900);
+    triangle(400, randomY, randomX, 500, 700, 900);
 
     let randomXNew = random(100, 400) 
-    let randomYNew = random(40, 600)
-    triangle(40, randomYNew, randomXNew, 10, 280, 200);
+    let randomYNew = random(200, 600)
+    triangle(450, randomYNew, randomXNew, 600, 700, 900);
 
     //Draw bounce ball with functions
     drawBall();

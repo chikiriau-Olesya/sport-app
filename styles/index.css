@@ -8,7 +8,7 @@
 }
 
 #bar {
-    width: 80vw;
+    width: 60vw;
     transition: 1000ms all linear;
 }
 
@@ -191,6 +191,10 @@ canvas {
 
     h1{
         font-size: 8vw;
+    }
+
+    #bar {
+        width: 80vw;
     }
 
 }

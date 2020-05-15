@@ -5,7 +5,7 @@ let timer = new easytimer.Timer();
 let timerTemplate = document.getElementById('timer');
 
 // Задаем время отдыха в секундах 
-const TIME = 03;
+const TIME = 10;
 // Задаем шаг, на который должен увеличиваться прогресс
 // за одну секунду
 // Находим 1% от времени, затем делим весь прогресс на найденные доли
