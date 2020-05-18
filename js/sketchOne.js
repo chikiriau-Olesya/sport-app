@@ -6,11 +6,12 @@ let ball = {
   }
   
   function setup() {
-    createCanvas(windowWidth, windowHeight);
+    let myCanvas = createCanvas(windowWidth, windowHeight);
+    myCanvas.parent("canvas");
+    background('#9EFF00');
   }
   
   function draw() {
-    background('#9EFF00');
     noStroke();
 
     //Draw bounce ball with functions
@@ -20,14 +21,14 @@ let ball = {
     
     //draw star
     translate(width * 0.5, height * 0.5);
-    rotate(frameCount / 50.0);
+    rotate(frameCount / 300.0);
     changeShapeFill();
     noStroke();
     star(mouseX - 200, mouseY - 200, 60, 100, 40);
     
     //draw rect
     noStroke();
-    rotate(frameCount / 500);
+    rotate(frameCount / 600);
     rect(-10, 400, 400, 300)
     
     changeShapeFill();

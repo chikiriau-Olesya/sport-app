@@ -51,10 +51,13 @@ a {
     font-family:  'Din', sans-serif;
 }
 
-h1,
 h2,
 h3 {
     color: white;
+}
+
+h1 {
+    color: black;
 }
 
 h1 {
@@ -89,11 +92,11 @@ h2 span:last-child {
 }
 
 h2 a {
-    color: inherit;
+    color: black;
 }
 
 h2 a:hover {
-    color: red;
+    color: #70D20D;
 }
 
 h3 {
